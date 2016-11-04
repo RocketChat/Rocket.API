@@ -36,7 +36,7 @@ defmodule Rocket.Endpoint do
     key: "_rocket_key",
     signing_salt: "VC8mPzig"
 
-  plug Corsica, origins: ["http://localhost", ~r{^https?://(.*\.?)foo\.com$}]
+  plug Corsica, origins: ["http://localhost", ~r{^https?://(.*\.?)foo\.com$}, ~r{^chrome-extension://(.*\.?)$}]
 
   plug Rocket.Router
 end
