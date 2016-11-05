@@ -2,7 +2,7 @@ defmodule Rocket.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  channel "room:*", Rocket.RoomChannel
+  channel "rooms:*", Rocket.RoomChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
