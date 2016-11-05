@@ -7,6 +7,6 @@ defmodule Rocket.Router do
 
   scope "/api", Rocket do
     pipe_through :api
-    resources "session", SessionController, only: [:index]
+    resources "/session", SessionController, only: [:index]
   end
 end
