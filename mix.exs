@@ -19,7 +19,7 @@ defmodule Rocket.Mixfile do
   def application do
     [mod: {Rocket, []},
      applications: [:phoenix, :phoenix_pubsub, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex, :corsica]]
+                    :phoenix_ecto, :postgrex, :corsica, :comeonin]]
   end
 
   # Specifies which paths to compile per environment.
@@ -36,6 +36,9 @@ defmodule Rocket.Mixfile do
      {:postgrex, ">= 0.0.0"},
      {:gettext, "~> 0.11"},
      {:corsica, "~> 0.5"},
+     {:comeonin, "~> 2.4"},
+     {:ja_serializer, "~> 0.11.0"},
+     {:guardian, "~> 0.13.0"},
      {:cowboy, "~> 1.0"},]
   end
 
